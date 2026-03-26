@@ -47,14 +47,14 @@ export const Footer = () => {
           {String(timeLeft.minutes).padStart(2, "0")}:
           {String(timeLeft.seconds).padStart(2, "0")}
         </h3>
-        <p className="mt-10 text-sm text-center">
+        <p className="mt-10 text-sm text-center w-75 md:w-full">
           <i>R.S.V.P</i>{" "}
           <span className="font-medium">
             Gujral's, Kapoor's, Tandon's, Sawhney's, Bhasin's, Chadha's &
             Anand's
           </span>
         </p>
-        <p className=" text-sm text-center mt-3 w-100 md:w-full">
+        <p className=" text-sm text-center mt-3 w-75 md:w-full">
           <i>Special invitiation from little flowers</i>{" "}
           <span className="font-medium">Anameha, Aaryav, Meeraya & Avya</span>
         </p>
