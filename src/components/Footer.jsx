@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 export const Footer = () => {
-  const targetDate = new Date("2026-04-28T00:00:00");
+  const targetDate = new Date("2026-04-29T00:00:00");
 
   const getTimeLeft = () => {
     const now = new Date();

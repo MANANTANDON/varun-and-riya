@@ -1,3 +1,4 @@
+import { INFO } from "@/constant";
 import React from "react";
 
 export const TopContainer = ({ isMobile }) => {
@@ -23,14 +24,14 @@ export const TopContainer = ({ isMobile }) => {
           }}
         >
           <div className="h-fit text-[#DBC375] mt-24 flex flex-col gap-2 lg:gap-4 items-center">
-            <h1 className="text-5xl lg:text-7xl xl:text-8xl font-semibold">
-              Varun
+            <h1 className="text-5xl lg:text-7xl xl:text-8xl font-medium">
+              <i>{INFO?.groomName}</i>
             </h1>
-            <h2 className="text-3xl lg:text-5xl xl:text-6xl font-medium">
-              <i>weds</i>
+            <h2 className="text-3xl lg:text-5xl xl:text-6xl font-light tracking-tighter">
+              weds
             </h2>
-            <h2 className="text-5xl lg:text-7xl xl:text-8xl font-semibold">
-              Riya
+            <h2 className="text-5xl lg:text-7xl xl:text-8xl font-medium">
+              <i>{INFO?.brideName}</i>
             </h2>
           </div>
         </div>

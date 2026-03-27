@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { TopContainer } from "@/components/TopContainer";
 import React, { useEffect, useState } from "react";
 import { Secondcontainer } from "@/components/SecondContainer";
+import { InfoContainer } from "@/components/InfoContainer";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -127,6 +128,7 @@ export default function Home() {
           }}
         />
       </div>
+      <InfoContainer />
       <Footer isMobile={isMobile} />
 
       {/* Hidden SEO text */}
