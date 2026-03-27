@@ -51,17 +51,37 @@ export default function Home() {
         <meta name="twitter:image" content="/images/og-image.jpg" />
       </Head>
 
-      <TopContainer isMobile={isMobile} />
-      {/* <div
-          className="absolute top-100 md:-top-50 left-1/2 -translate-x-1/2 h-74 md:h-144 w-70 md:w-140 float-animation-air border border-zinc-100"
+      <div className="relative overflow-hidden">
+        <TopContainer isMobile={isMobile} />
+        <Secondcontainer isMobile={isMobile} />
+        <div
+          className="absolute h-670 w-30 -left-5 md:left-0 bottom-0 z-20"
           style={{
-            backgroundImage: "url(/images/balloon.avif)",
+            backgroundImage: "url(/images/left.png)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
-        /> */}
-      <Secondcontainer isMobile={isMobile} />
+        />
+        <div
+          className="absolute h-670 w-30 bottom-0 -right-4 md:right-0 z-20"
+          style={{
+            backgroundImage: "url(/images/right.png)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+        <div
+          className="absolute h-34 w-473 -bottom-5 md:bottom-0 z-20 "
+          style={{
+            backgroundImage: "url(/images/bottom.png)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+      </div>
       <Footer isMobile={isMobile} />
 
       {/* Hidden SEO text */}

@@ -4,7 +4,7 @@ export const TopContainer = ({ isMobile }) => {
   return (
     <>
       <div
-        className="relative h-150 md:h-140 lg:h-220 w-screen overflow-hidden"
+        className="relative h-150 md:h-140 lg:h-220 w-screen overflow-y-visible"
         style={{
           backgroundImage: "url(/images/bg1.avif)",
           backgroundPosition: "center",
@@ -14,7 +14,7 @@ export const TopContainer = ({ isMobile }) => {
       >
         {/* Top Graphic */}
         <div
-          className="absolute w-screen h-125 lg:h-175 flex justify-center z-20"
+          className="absolute w-screen h-125 lg:h-175 flex justify-center z-22"
           style={{
             backgroundImage: `url(${isMobile ? "/images/top2.avif" : "/images/top.avif"})`,
             backgroundPosition: "center",
@@ -55,7 +55,7 @@ export const TopContainer = ({ isMobile }) => {
           }}
         />
         <div
-          className="absolute top-95 md:top-75 lg:top-95 -left-55 md:-left-30 lg:-left-100 xl:-left-80 w-90 lg:w-200 h-70 lg:h-150 flex justify-center z-19 float-animation float-animation-flowers"
+          className="absolute top-95 md:top-75 lg:top-95 -left-55 md:-left-30 lg:-left-100 xl:-left-80 w-90 lg:w-200 h-70 lg:h-150 flex justify-center z-21 float-animation float-animation-flowers"
           style={{
             backgroundImage: "url(/images/leftflower.avif)",
             backgroundPosition: "center",
@@ -74,7 +74,7 @@ export const TopContainer = ({ isMobile }) => {
           }}
         />
         <div
-          className="absolute top-95 md:top-75 lg:top-95 -right-55 md:-right-30 lg:-right-100 xl:-right-80 w-90 lg:w-200 h-70 lg:h-150 justify-center z-19 float-animation float-animation-flowers"
+          className="absolute top-95 md:top-75 lg:top-95 -right-55 md:-right-30 lg:-right-100 xl:-right-80 w-90 lg:w-200 h-70 lg:h-150 justify-center z-21 float-animation float-animation-flowers"
           style={{
             backgroundImage: "url(/images/rightflower.avif)",
             backgroundPosition: "center",

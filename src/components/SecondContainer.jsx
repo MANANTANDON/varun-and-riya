@@ -4,7 +4,7 @@ export const Secondcontainer = () => {
   return (
     <>
       <div
-        className="relative h-250 w-screen"
+        className="relative h-100 md:h-250 w-screen"
         style={{
           backgroundImage: "url(/images/bg1.avif)",
           backgroundPosition: "center",
@@ -31,9 +31,29 @@ export const Secondcontainer = () => {
           }}
         />
         <div
-          className="absolute bottom-150 md:bottom-20 lg:bottom-40 right-10 lg:right-70 h-26 md:h-56 w-23 md:w-43 rotate-subtle"
+          className="absolute bottom-0 md:bottom-20 lg:bottom-40 right-10 lg:right-70 h-26 md:h-56 w-23 md:w-43 rotate-subtle"
           style={{
             backgroundImage: "url(/images/moon.png)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+      </div>
+      {/* The Hills */}
+      <div
+        className="relative h-100 md:h-287 w-screen"
+        style={{
+          backgroundImage: "url(/images/bg1.avif)",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div
+          className="absolute h-130 w-105 md:h-380 md:w-355 top-45 md:top-130 -translate-y-1/2 left-1/2 -translate-x-1/2"
+          style={{
+            backgroundImage: "url(/images/hill.avif)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
