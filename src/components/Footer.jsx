@@ -58,9 +58,7 @@ export const Footer = () => {
           <i>Special invitiation from little flowers</i>{" "}
           <span className="font-medium">Anameha, Aaryav, Meeraya & Avya</span>
         </p>
-        <p className="mt-20 text-xs">
-          © developed by 4d161e616e (Snowchild Studio)
-        </p>
+        <p className="mt-20 text-xs">© developed by Manan (Snowchild Studio)</p>
       </div>
     </div>
   );

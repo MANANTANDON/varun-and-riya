@@ -1,4 +1,4 @@
-import { INFO } from "@/constant";
+import { EVENTS, INFO } from "@/constant";
 import React from "react";
 
 export const InfoContainer = () => {
@@ -48,13 +48,92 @@ export const InfoContainer = () => {
         <h2 className="text-[#DBC375] text-6xl md:text-9xl font-semibold">
           <i>{INFO.brideName}</i>
         </h2>
-        <h2 className="text-[#DBC375] text-xl md:text-4xl font-semibold py-8 text-center">
+        <h2 className="text-[#DBC375] text-xl md:text-4xl font-semibold pt-8 text-center">
           <i>{INFO?.pageOne?.brideParents}</i>
         </h2>
-        <h2 className="text-[#DBC375] text-lg md:text-2xl font-light">
+        <h2 className="text-[#DBC375] text-lg md:text-2xl font-light pt-10 lg:pt-30">
           On the following events
         </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-50 gap-y-20 mt-8">
+          {EVENTS.slice(0, 4).map((item, key) => (
+            <div key={key} className="flex flex-col items-center">
+              <div className="border-3 border-[#DBC375] p-2 rounded-[150px]">
+                <div
+                  className=" h-112 w-75 "
+                  style={{
+                    backgroundImage: `url(${item.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                />
+              </div>
+              <div className="flex flex-col gap-4 items-center mt-5">
+                <h2 className=" text-[#DBC375] text-4xl font-semibold">
+                  {item?.name}
+                </h2>
+                <h2 className=" text-[#DBC375] text-xl">{item?.date}</h2>
+                <h2 className="w-70 text-[#DBC375] text-base/5 text-center">
+                  <i>{item?.venue}</i>
+                </h2>
+                <h2 className=" text-[#DBC375]">{item?.time}</h2>
+                <a
+                  href={item?.location}
+                  className=" text-[#DBC375]"
+                  target="_blank"
+                >
+                  <i>
+                    <u>see the route</u>
+                  </i>
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-1 mt-20">
+          <div className="flex flex-col items-center">
+            <div className="border-3 border-[#DBC375] p-2 rounded-[150px]">
+              <div
+                className=" h-112 w-75 "
+                style={{
+                  backgroundImage: `url(${EVENTS[4].image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              />
+            </div>
+            <div className="flex flex-col gap-4 items-center mt-5">
+              <h2 className=" text-[#DBC375] text-4xl font-semibold">
+                {EVENTS[4].name}
+              </h2>
+              <h2 className=" text-[#DBC375] text-xl">{EVENTS[4].date}</h2>
+              <h2 className="w-70 text-[#DBC375] text-base/5 text-center">
+                <i>{EVENTS[4].venue}</i>
+              </h2>
+              <h2 className=" text-[#DBC375]">{EVENTS[4].time}</h2>
+              <a
+                href={EVENTS[4].location}
+                className=" text-[#DBC375]"
+                target="_blank"
+              >
+                <i>
+                  <u>see the route</u>
+                </i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+      <div
+        className="h-30 md:h-80 w-full flex flex-col items-center py-20 -mt-1 lg:hidden"
+        style={{
+          backgroundImage: "url(/images/secondbg.avif)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
     </>
   );
 };
