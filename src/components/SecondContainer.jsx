@@ -51,7 +51,7 @@ export const Secondcontainer = () => {
         }}
       >
         <div
-          className="absolute h-130 w-105 md:h-380 md:w-355 top-45 md:top-130 -translate-y-1/2 left-1/2 -translate-x-1/2"
+          className="absolute h-130 w-105 md:h-380 md:w-355 top-45 md:top-130 -translate-y-1/2 left-1/2 -translate-x-1/2 float-animation-hills"
           style={{
             backgroundImage: "url(/images/hill.avif)",
             backgroundPosition: "center",

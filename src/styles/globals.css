@@ -97,6 +97,10 @@ body {
   overflow-x: hidden;
 }
 
+.float-animation-hills {
+  animation: float 5s ease-in-out infinite;
+}
+
 .float-animation-shiv {
   animation: float 3.5s ease-in-out infinite;
 }
