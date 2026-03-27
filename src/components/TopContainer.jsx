@@ -4,7 +4,7 @@ export const TopContainer = ({ isMobile }) => {
   return (
     <>
       <div
-        className="relative h-225 w-screen"
+        className="relative h-225 w-screen overflow-hidden"
         style={{
           backgroundImage: "url(/images/bg1.avif)",
           backgroundPosition: "center",
@@ -36,9 +36,47 @@ export const TopContainer = ({ isMobile }) => {
         </div>
         {/* Shiv Cont */}
         <div
-          className="absolute top-115 sm:top-102 lg:top-165 left-1/2 w-90 lg:w-200 h-70 lg:h-150 flex justify-center z-19 -translate-x-1/2 -translate-y-1/2 float-animation "
+          className="absolute top-115 sm:top-102 lg:top-165 left-1/2 w-90 lg:w-200 h-70 lg:h-150 flex justify-center z-19 -translate-x-1/2 -translate-y-1/2 float-animation-shiv"
           style={{
             backgroundImage: "url(/images/shiv.avif)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+        {/* leaves + flowers: LEFT */}
+        <div
+          className="absolute top-85 md:top-70 lg:top-85 -left-36 md:left-5 lg:-left-50 xl:-left-15 w-90 lg:w-200 h-70 lg:h-150 flex justify-center z-19 float-animation float-animation-leaves"
+          style={{
+            backgroundImage: "url(/images/leftleaves.avif)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+        <div
+          className="absolute top-95 md:top-75 lg:top-95 -left-55 md:-left-30 lg:-left-100 xl:-left-80 w-90 lg:w-200 h-70 lg:h-150 flex justify-center z-19 float-animation float-animation-flowers"
+          style={{
+            backgroundImage: "url(/images/leftflower.avif)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+        {/* leaves + flowers: RIGHT */}
+        <div
+          className="absolute top-85 md:top-70 lg:top-85 -right-36 md:right-5 lg:-right-50 xl:-right-15 w-90 lg:w-200 h-70 lg:h-150 flex justify-center z-19 float-animation float-animation-leaves"
+          style={{
+            backgroundImage: "url(/images/rightleaves.avif)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+        <div
+          className="absolute top-95 md:top-75 lg:top-95 -right-55 md:-right-30 lg:-right-100 xl:-right-80 w-90 lg:w-200 h-70 lg:h-150 justify-center z-19 float-animation float-animation-flowers"
+          style={{
+            backgroundImage: "url(/images/rightflower.avif)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
