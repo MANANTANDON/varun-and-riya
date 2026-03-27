@@ -4,7 +4,7 @@ export const TopContainer = ({ isMobile }) => {
   return (
     <>
       <div
-        className="h-225 w-screen"
+        className="relative h-225 w-screen"
         style={{
           backgroundImage: "url(/images/bg1.avif)",
           backgroundPosition: "center",
@@ -12,8 +12,9 @@ export const TopContainer = ({ isMobile }) => {
           backgroundRepeat: "no-repeat",
         }}
       >
+        {/* Top Graphic */}
         <div
-          className="absolute w-screen h-125 lg:h-175 flex justify-center"
+          className="absolute w-screen h-125 lg:h-175 flex justify-center z-20"
           style={{
             backgroundImage: `url(${isMobile ? "/images/top2.avif" : "/images/top.avif"})`,
             backgroundPosition: "center",
@@ -33,6 +34,16 @@ export const TopContainer = ({ isMobile }) => {
             </h2>
           </div>
         </div>
+        {/* Shiv Cont */}
+        <div
+          className="absolute top-115 sm:top-102 lg:top-165 left-1/2 w-90 lg:w-200 h-70 lg:h-150 flex justify-center z-19 -translate-x-1/2 -translate-y-1/2 float-animation "
+          style={{
+            backgroundImage: "url(/images/shiv.avif)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
       </div>
     </>
   );
