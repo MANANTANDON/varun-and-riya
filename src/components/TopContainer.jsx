@@ -4,7 +4,7 @@ export const TopContainer = ({ isMobile }) => {
   return (
     <>
       <div
-        className="relative h-225 w-screen overflow-hidden"
+        className="relative h-150 md:h-140 lg:h-220 w-screen overflow-hidden"
         style={{
           backgroundImage: "url(/images/bg1.avif)",
           backgroundPosition: "center",

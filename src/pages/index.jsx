@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Footer } from "@/components/Footer";
 import { TopContainer } from "@/components/TopContainer";
 import React, { useEffect, useState } from "react";
+import { Secondcontainer } from "@/components/SecondContainer";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -51,6 +52,16 @@ export default function Home() {
       </Head>
 
       <TopContainer isMobile={isMobile} />
+      {/* <div
+          className="absolute top-100 md:-top-50 left-1/2 -translate-x-1/2 h-74 md:h-144 w-70 md:w-140 float-animation-air border border-zinc-100"
+          style={{
+            backgroundImage: "url(/images/balloon.avif)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        /> */}
+      <Secondcontainer isMobile={isMobile} />
       <Footer isMobile={isMobile} />
 
       {/* Hidden SEO text */}

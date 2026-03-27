@@ -91,8 +91,10 @@
   font-style: italic;
 }
 
+html,
 body {
   font-family: "IBM Plex Serif", serif;
+  overflow-x: hidden;
 }
 
 .float-animation-shiv {
@@ -107,6 +109,30 @@ body {
   animation: float 4s ease-in-out infinite;
 }
 
+.float-castle {
+  animation: floatLR 6s ease-in-out infinite;
+}
+
+.float-animation-air {
+  animation: floatLR 8s ease-in-out infinite;
+}
+.rotate-subtle {
+  animation: rotateSubtle 8s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes rotateSubtle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes float {
   0%,
   100% {
@@ -114,5 +140,17 @@ body {
   }
   50% {
     transform: translateY(-10px);
+  }
+}
+
+@keyframes floatLR {
+  0% {
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateX(40px) translateY(-10px) rotate(2deg);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px) rotate(0deg);
   }
 }
