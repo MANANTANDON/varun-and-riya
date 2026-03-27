@@ -82,7 +82,7 @@ export default function Home() {
           }}
         />
         <div
-          className="absolute h-[1950px] w-[1082px]  -bottom-280 -right-190 md:-bottom-70 md:-right-180 lg:-right-170 lg:bottom-0 xl:-right-140 xl:bottom-0 float-castle"
+          className="absolute h-487.5 w-270.5  -bottom-280 -right-190 md:-bottom-70 md:-right-180 lg:-right-170 lg:bottom-0 xl:-right-140 xl:bottom-0 float-castle"
           style={{
             backgroundImage: "url(/images/righttree.avif)",
             backgroundPosition: "center",
