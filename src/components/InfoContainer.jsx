@@ -17,7 +17,7 @@ export const InfoContainer = () => {
           ॐ श्री गणेशाय नम
         </h1>
         <div
-          className="h-60 w-60 md:h-80 md:w-80 flex flex-col items-center py-20"
+          className="h-60 w-60 lg:h-80 lg:w-80 flex flex-col items-center py-30"
           style={{
             backgroundImage: "url(/images/ganeshji.avif)",
             backgroundSize: "cover",
@@ -29,22 +29,22 @@ export const InfoContainer = () => {
           वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ। <br />
           निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
         </h3>
-        <h2 className="text-[#DBC375] text-md md:text-xl font-light mt-8">
+        <h2 className="text-[#DBC375] text-md md:text-xl font-light pt-8">
           {INFO?.pageOne?.headingOne}
         </h2>
         <h2 className="text-[#DBC375] text-lg md:text-2xl text-center font-medium">
           {INFO?.pageOne?.grandParents}
         </h2>
-        <h2 className="text-[#DBC375] text-xl md:text-4xl font-semibold mt-8 text-center">
+        <h2 className="text-[#DBC375] text-xl md:text-4xl font-semibold pt-8 text-center">
           <i>{INFO?.pageOne?.groomsParents}</i>
         </h2>
-        <p className="text-[#DBC375]  text-base/5 md:text-xl/6.5  w-75 md:w-150 text-center mt-2">
+        <p className="text-[#DBC375]  text-base/5 md:text-xl/6.5  w-75 md:w-150 text-center pt-2">
           {INFO?.pageOne?.descriptionOne}
         </p>
-        <h2 className="text-[#DBC375] text-6xl md:text-9xl mt-8 font-semibold">
+        <h2 className="text-[#DBC375] text-6xl md:text-9xl pt-8 font-semibold">
           <i>{INFO.groomName}</i>
         </h2>
-        <h2 className="text-[#DBC375] text-3xl md:text-6xl my-2">&</h2>
+        <h2 className="text-[#DBC375] text-3xl md:text-6xl py-2">&</h2>
         <h2 className="text-[#DBC375] text-6xl md:text-9xl font-semibold">
           <i>{INFO.brideName}</i>
         </h2>
@@ -54,7 +54,7 @@ export const InfoContainer = () => {
         <h2 className="text-[#DBC375] text-lg md:text-2xl font-light pt-10 lg:pt-30">
           On the following events
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-50 gap-y-20 mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-50 gap-y-20 pt-8">
           {EVENTS.slice(0, 4).map((item, key) => (
             <div key={key} className="flex flex-col items-center">
               <div className="border-3 border-[#DBC375] p-2 rounded-[150px]">
@@ -68,7 +68,7 @@ export const InfoContainer = () => {
                   }}
                 />
               </div>
-              <div className="flex flex-col gap-4 items-center mt-5">
+              <div className="flex flex-col gap-4 items-center pt-5">
                 <h2 className=" text-[#DBC375] text-4xl font-semibold">
                   {item?.name}
                 </h2>
