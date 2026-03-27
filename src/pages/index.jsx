@@ -64,6 +64,15 @@ export default function Home() {
           }}
         />
         <div
+          className="absolute h-602.5 w-415.25 -left-287 md:-left-270 lg:-left-250 xl:-left-240 -bottom-200 md:-bottom-50 z-19 float-castle"
+          style={{
+            backgroundImage: "url(/images/lefttree.avif)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+        <div
           className="absolute h-670 w-30 bottom-0 -right-4 md:right-0 z-20"
           style={{
             backgroundImage: "url(/images/right.png)",
@@ -73,9 +82,45 @@ export default function Home() {
           }}
         />
         <div
+          className="absolute h-[1950px] w-[1082px]  -bottom-280 -right-190 md:-bottom-70 md:-right-180 lg:-right-170 lg:bottom-0 xl:-right-140 xl:bottom-0 float-castle"
+          style={{
+            backgroundImage: "url(/images/righttree.avif)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+        <div
           className="absolute h-34 w-473 -bottom-5 md:bottom-0 z-20 "
           style={{
             backgroundImage: "url(/images/bottom.png)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+        <div
+          className="absolute w-38 h-57 md:w-63 md:h-107 -bottom-5 -left-8 md:-bottom-10 md:-left-10 z-20 "
+          style={{
+            backgroundImage: "url(/images/leftimg.avif)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+        <div
+          className="absolute w-38 h-57 md:w-63 md:h-107 -bottom-5 -right-8 md:-bottom-10 md:-right-10 z-20 "
+          style={{
+            backgroundImage: "url(/images/rightimg.avif)",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+        <div
+          className="absolute w-26.25 h-35  md:w-76.25 md:h-85 bottom-13 md:bottom-30 left-1/2 -translate-x-1/2 translate-y-1/2 z-20"
+          style={{
+            backgroundImage: "url(/images/om.avif)",
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
