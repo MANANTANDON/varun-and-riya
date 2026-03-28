@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Secondcontainer } from "@/components/SecondContainer";
 import { InfoContainer } from "@/components/InfoContainer";
 import { BrideGroomContainer } from "@/components/BrideGroomContainer";
+import { Pause, PlayArrow } from "@mui/icons-material";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -71,7 +72,7 @@ export default function Home() {
         className="sfpro-text fixed top-6 right-6 z-50 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer bg-[#DBC375] shadow-[0_12px_30px_rgba(0,0,0,0.9)] hover:scale-110 transition-all duration-300"
         onClick={handlePlayPause}
       >
-        {isPlaying ? "􀊆" : "􀊄"}
+        {isPlaying ? <Pause /> : <PlayArrow />}
       </button>
       <audio ref={audioRef} loop>
         <source src="/audio/music.mp3" type="audio/mpeg" />
