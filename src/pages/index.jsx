@@ -56,7 +56,6 @@ export default function Home() {
           property="og:description"
           content="You're invited to Varun & Riya’s wedding on 29 April 2026 💍"
         />
-        <meta property="og:image" content="/images/v.jpeg" />
         <meta property="og:type" content="website" />
 
         {/* Twitter */}
@@ -66,7 +65,6 @@ export default function Home() {
           name="twitter:description"
           content="Celebrate with us on 29 April 2026 💍"
         />
-        <meta name="twitter:image" content="/images/v.jpeg" />
       </Head>
 
       <button

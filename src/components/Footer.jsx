@@ -31,7 +31,7 @@ export const Footer = () => {
 
   return (
     <div
-      className="h-175 w-screen flex items-center justify-center"
+      className="h-155 w-screen flex items-center justify-center"
       style={{
         backgroundImage: "url(/images/footerbg.avif)",
         backgroundPosition: "center",

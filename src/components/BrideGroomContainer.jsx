@@ -5,7 +5,7 @@ export const BrideGroomContainer = () => {
   return (
     <>
       <div
-        className="relative h-300 md:h-330 w-full flex flex-col items-center gap-5 md:gap-10 pt-15 md:pt-20"
+        className="relative h-170 md:h-190 lg:h-180 w-full flex flex-col items-center gap-5 md:gap-10 pt-15 md:pt-20"
         style={{
           backgroundImage: "url(/images/thirdbg.avif)",
           backgroundSize: "cover",
@@ -36,16 +36,6 @@ export const BrideGroomContainer = () => {
           take this opportunity to thank everyone most sincerely for their
           kindness. We are looking forward to see you at the wedding functions.
         </h3>
-        <div className="border-4 border-[#004962] rounded-[200px] p-2 mt-10">
-          <div className="relative overflow-hidden  h-108 w-67 rounded-[200px]">
-            <Image
-              src="/images/v.jpeg"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-            />
-          </div>
-        </div>
       </div>
     </>
   );
