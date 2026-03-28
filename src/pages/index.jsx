@@ -37,11 +37,12 @@ export default function Home() {
   return (
     <>
       <Head>
+        <link rel="icon" href="/favicon.ico" />
         <title>Varun & Riya Wedding | 29 April 2026</title>
 
         <meta
           name="description"
-          content="Join us to celebrate the wedding of Varun & Riya on 28 April 2026. A beautiful journey of love begins."
+          content="Join us to celebrate the wedding of Varun & Riya on 29 April 2026. A beautiful journey of love begins."
         />
 
         <meta
@@ -53,7 +54,7 @@ export default function Home() {
         <meta property="og:title" content="Varun ❤️ Riya Wedding" />
         <meta
           property="og:description"
-          content="You're invited to Varun & Riya’s wedding on 28 April 2026 💍"
+          content="You're invited to Varun & Riya’s wedding on 29 April 2026 💍"
         />
         <meta property="og:image" content="/images/v.jpeg" />
         <meta property="og:type" content="website" />
@@ -63,7 +64,7 @@ export default function Home() {
         <meta name="twitter:title" content="Varun ❤️ Riya Wedding" />
         <meta
           name="twitter:description"
-          content="Celebrate with us on 28 April 2026 💍"
+          content="Celebrate with us on 29 April 2026 💍"
         />
         <meta name="twitter:image" content="/images/v.jpeg" />
       </Head>
@@ -159,7 +160,7 @@ export default function Home() {
 
       {/* Hidden SEO text */}
       <p className="hidden">
-        Varun and Riya are getting married on 28 April 2026. Join us in this
+        Varun and Riya are getting married on 29 April 2026. Join us in this
         beautiful Indian wedding celebration filled with love, traditions, and
         unforgettable memories.
       </p>
