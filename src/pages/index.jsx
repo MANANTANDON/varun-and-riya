@@ -1,13 +1,27 @@
 import Head from "next/head";
 import { Footer } from "@/components/Footer";
 import { TopContainer } from "@/components/TopContainer";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Secondcontainer } from "@/components/SecondContainer";
 import { InfoContainer } from "@/components/InfoContainer";
 import { BrideGroomContainer } from "@/components/BrideGroomContainer";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
+  const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlayPause = () => {
+    if (!audioRef.current) return;
+
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+
+    setIsPlaying(!isPlaying);
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -53,6 +67,15 @@ export default function Home() {
         <meta name="twitter:image" content="/images/og-image.jpg" />
       </Head>
 
+      <button
+        className="sfpro-text fixed top-6 right-6 z-50 w-10 h-10 flex items-center justify-center rounded-full cursor-pointer bg-[#DBC375] shadow-[0_12px_30px_rgba(0,0,0,0.9)] hover:scale-110 transition-all duration-300"
+        onClick={handlePlayPause}
+      >
+        {isPlaying ? "􀊆" : "􀊄"}
+      </button>
+      <audio ref={audioRef} loop>
+        <source src="/audio/music.mp3" type="audio/mpeg" />
+      </audio>
       <div className="relative overflow-hidden">
         <TopContainer isMobile={isMobile} />
         <Secondcontainer isMobile={isMobile} />
