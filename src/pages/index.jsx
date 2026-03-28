@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Varun & Riya Wedding | 28 April 2026</title>
+        <title>Varun & Riya Wedding | 29 April 2026</title>
 
         <meta
           name="description"
@@ -55,7 +55,7 @@ export default function Home() {
           property="og:description"
           content="You're invited to Varun & Riya’s wedding on 28 April 2026 💍"
         />
-        <meta property="og:image" content="/images/og-image.jpg" />
+        <meta property="og:image" content="/images/v.jpeg" />
         <meta property="og:type" content="website" />
 
         {/* Twitter */}
@@ -65,7 +65,7 @@ export default function Home() {
           name="twitter:description"
           content="Celebrate with us on 28 April 2026 💍"
         />
-        <meta name="twitter:image" content="/images/og-image.jpg" />
+        <meta name="twitter:image" content="/images/v.jpeg" />
       </Head>
 
       <button
@@ -163,6 +163,11 @@ export default function Home() {
         beautiful Indian wedding celebration filled with love, traditions, and
         unforgettable memories.
       </p>
+      <img
+        src="/images/v.jpeg"
+        alt="Varun and Riya wedding"
+        className="hidden"
+      />
     </>
   );
 }
