@@ -5,7 +5,7 @@ export const InfoContainer = () => {
   return (
     <>
       <div
-        className="h-1198.5 w-full flex flex-col items-center py-20"
+        className="h-1215 md:h-1230 lg:h-950  w-full flex flex-col items-center py-15"
         style={{
           backgroundImage: "url(/images/secondbg.avif)",
           backgroundSize: "cover",

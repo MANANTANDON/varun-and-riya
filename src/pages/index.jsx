@@ -4,6 +4,7 @@ import { TopContainer } from "@/components/TopContainer";
 import React, { useEffect, useState } from "react";
 import { Secondcontainer } from "@/components/SecondContainer";
 import { InfoContainer } from "@/components/InfoContainer";
+import { BrideGroomContainer } from "@/components/BrideGroomContainer";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -129,6 +130,7 @@ export default function Home() {
         />
       </div>
       <InfoContainer />
+      <BrideGroomContainer />
       <Footer isMobile={isMobile} />
 
       {/* Hidden SEO text */}
