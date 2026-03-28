@@ -161,7 +161,7 @@ body {
 }
 
 .sfpro-text {
-  font-family: "SF Pro Text";
+  font-family: "SF Pro Text" !important;
 }
 
 .float-animation-hills {
