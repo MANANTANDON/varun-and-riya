@@ -22,7 +22,7 @@ export const BrideGroomContainer = () => {
             backgroundRepeat: "no-repeat",
           }}
         />
-        <h2 className="text-[#004962] text-xl md:text-3xl">MEET THE</h2>
+        <h2 className="text-[#004962] text-xl md:text-3xl">MESSAGE FROM</h2>
         <h3 className="text-center text-[#004962] text-6xl md:text-8xl font-semibold tracking-tight">
           <i>
             Bride &<br /> Groom

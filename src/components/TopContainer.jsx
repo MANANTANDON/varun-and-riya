@@ -1,4 +1,5 @@
 import { INFO } from "@/constant";
+import { ArrowDownwardOutlined } from "@mui/icons-material";
 import React from "react";
 
 export const TopContainer = ({ isMobile }) => {
@@ -13,6 +14,10 @@ export const TopContainer = ({ isMobile }) => {
           backgroundRepeat: "no-repeat",
         }}
       >
+        <div className="absolute bottom-0 md:bottom-10 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 text-zinc-100 flex flex-col items-center text-xl font-semibold float-animation-leaves">
+          <ArrowDownwardOutlined />
+          Swipe Down
+        </div>
         {/* Top Graphic */}
         <div
           className="absolute w-screen h-125 lg:h-175 flex justify-center z-22"
