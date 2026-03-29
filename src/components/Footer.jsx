@@ -55,11 +55,12 @@ export const Footer = () => {
           </span>
         </p>
         <p className=" text-sm text-center mt-3 w-75 md:w-full">
-          <i>Special invitiation from little flowers</i>{" "}
-          <span className="font-medium">Anameha, Aaryav, Meeraya & Avya</span>
+          <i>Special invitation from little flowers</i>{" "}
+          <span className="font-medium">Anameha, Aaryav, Meeraya & Aavya</span>
         </p>
-        <p className="mt-20 text-xs text-[#FFE985]">
-          © developed by Manan (Snowchild Studio)
+        <p className="mt-20 text-xs">
+          © <a href="https://www.snowchildstudio.com/">(Snowchild Studio)</a>{" "}
+          developed by Manan
         </p>
       </div>
     </div>
